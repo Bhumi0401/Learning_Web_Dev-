@@ -1,0 +1,242 @@
+<!--  index.html file is by default considered as homepage file for website.  -->
+
+<!-- on writing ! and choosing ammet abbreviation  - will give boiler plate code -->
+
+<!DOCTYPE html>                               <!--  tells browser that u r using html5  -->
+<html lang="en">                              <!-- root of an html document -->
+<head>                                        <!-- container for metadata - that is imp info,just dont show on webpage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="seo.png">                             <!-- favicons -->
+    <title>learning html</title>                           <!-- page title -->
+</head>        
+<body>                                        <!-- contains all data rendered by the browser -->          
+    <h1>this is a h1 heading</h1>  
+    <h2>this is a h2 heading</h2>     
+    <h3>this is a h3 heading</h3>       
+    <h4>this is a h4 heading</h4>  
+    <br>
+    <hr>
+    <br>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi at porro repudiandae perspiciatis, labore quod quas autem nulla unde expedita? Omnis in tempora mollitia velit nulla eaque veniam sint magnam.</p>
+
+    <p>this is a paragraph tag.and paragraph tags dont consider any spaces or line breaks .for considering spaces and line breaks always use pre tag.</p>
+
+    <pre>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Cupiditate ad nobis consectetur nulla ut 
+    doloremque optio in harum sequi cumque dignissimos officiis quibusdam, 
+    temporibus minima dicta saepe reprehenderit pariatur eaque.
+    </pre>
+
+    <!-- target attribute used to open link in a new window-->
+    <a href="hello.html"
+    target = "_blank"                         
+    title = "goes to a file">
+        click me
+    </a>
+
+    <br>
+    <a href="mailto:bhumimittal017@gmail.com"
+    target = "_blank">
+        Email Me
+    </a>
+
+    <br>
+    <a href="//www.youtube.com/watch?v=5GCfYLguTIs&list=RD5GCfYLguTIs&start_radio=1"
+    title="song video">
+        video
+    </a>
+    <br>
+    <img src="https://m.media-amazon.com/images/I/718vM+75UNL.jpg" 
+    alt="this is pic of a book"
+    height="200">
+
+    <a href="https://bookscape.com/?srsltid=AfmBOoo2PP7i1S8nsVAs07gl32DqXmBuN5cwUJ-f9fCdoIpaV6eoAaqV">
+        <img src="https://m.media-amazon.com/images/I/718vM+75UNL.jpg" alt="book" height="120">
+    </a>
+    
+    <audio controls autoplay muted loop> 
+    <source src="Always Yours (feat. The Parrisian & Parris Fleming) - The Parrisian feat. Parris Fleming.mp3">
+    </audio>
+
+    <audio controls src="Always Yours (feat. The Parrisian & Parris Fleming) - The Parrisian feat. Parris Fleming.mp3">
+    </audio>
+
+    <video controls muted 
+    src="sample-5s.mp4" width="500px" type="video/mp4">
+    </video>
+
+    <a target="_blank" href="https://samplelib.com/sample-mp4.html">
+        <video width="500px" controls autoplay muted loop
+        src="sample-5s.mp4">
+        </video>
+    </a>
+
+    <p>this is a normal text</p>
+    <p>this is a <b>bold</b> text</p>
+    <p>this is a <i>italic</i> text</p>
+    <p>this is a <u>underlined</u> text</p>
+    <p>this is a <del>deleted</del> text</p>
+    <p>this is a <big>big</big> text</p>
+    <p>this is a <small>small</small> text</p>
+    <p>this is a <sub>subscript</sub> text</p>
+    <p>this is a <sup>superscript</sup> text</p>
+    <p>this is a <tt>monospaced</tt> text</p>
+    <p>this is a <mark>marked</mark> text</p>
+
+    <!-- GROUP TOGETHER HTML 
+    <span> incline container to group elements for styling purposes.
+    <div> block container to group elements for styling purposes. -->
+
+    <h1><span style="background-color:deepskyblue;">this is a span title</span></h1>
+    <h1><div style="background-color:aquamarine">this is a div tag</div></h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span style="background-color:deepskyblue;"> Facilis cum sed neque dolores accusantium consequuntur? Sequi rerum architecto voluptatem voluptates nulla error minima iusto impedit odit.</span> Modi, doloribus! Atque, dignissimos!</p>
+
+    <p>Lorem ipsum, dolor sit <div style="background-color:aquamarine">amet consectetur adipisicing elit. Expedita, ipsa. Distinctio molestiae aspernatur et debitis mollitia commodi porro, officia minus unde eos, alias,</div> incidunt quaerat delectus aliquam impedit nesciunt accusantium!</p>
+
+    <!-- LIST -->
+
+            <!-- unordered list  -->
+            <h3>GROCERIES</h3>
+            <ul>
+                <li>milk</li>
+                <li>sugar</li>
+                <li>snacks</li>
+                <li>tea</li>
+                <li>coffee supplies</li>
+                <ul>
+                    <li>coffee beans</li>
+                    <li>creamer</li>
+                    <li>sugar</li>
+                </ul>
+            </ul>
+
+
+            <!-- ordered list  -->
+            <ol>
+                <li>eat breakfast</li>
+                <li>go to class</li>
+                <li>walk dog</li>
+                <li>work</li>
+            </ol>
+
+
+            <!-- description list -->
+             <h4>Mythical Creatures</h4>
+            <dl style="background-color:hotpink; border:2px solid">
+                <dt>dragon</dt>
+                <dd>A dragon is a legendary, serpent-like mythical creature widely known for its immense size, scaly reptilian skin, sharp claws, and the ability to breathe fire</dd>
+
+                <dt>phoenix</dt>
+                <dd>he phoenix is a legendary, immortal mythical bird that cyclically bursts into flames and is spectacularly reborn from its own ashes, serving as a powerful universal symbol of renewal, resilience, and new beginnings</dd>
+
+                <dt>vampire</dt>
+                <dd>A vampire is a nocturnal, immortal predator that subsists by feeding on the vital life force—usually blood—of the living</dd>
+            </dl>
+
+<!-- TABLES -->
+        <h3>Store Hours</h3>
+        <table border="1" style="background-color:black">
+            <tr align="center" style="background-color:lightblue">
+                <th width="100">Monday</th>
+                <th width="100">Tuesday</th>
+                <th width="100">Wednesday</th>
+                <th width="100">Thursday</th>
+                <th width="100">Friday</th>
+                <th width="100">Saturday</th>
+                <th width="100">Sunday</th>
+            </tr>
+            <tr align="center" style="background-color:aliceblue">
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>10-2</td>
+                <td>closed</td>
+            </tr>
+        </table>
+<br>
+
+<!-- BUTTONS -->
+    <a href="https://www.google.com/" target="_blank">
+    <button style="font-size:25px; background-color:grey; color:lightblue ; border-radius:25px">click me</button>
+    </a> 
+
+<!-- FORMS -->
+    <form action="index.php" method=""POST enctype="multipart/form-data">
+        <label for="username">username:</label>
+        <input type="text" id="username" placeholder="SpongeBob" minlength="6" maxlength="15" required>
+
+        <label for="password">password:</label>
+        <input type="password" id="password"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="squarepant@gmail.com"><br>
+
+        <label for="phoneNo">phone:</label>
+        <input type="tel" id="phoneNo" placeholder="123-456-7892" ><br>
+
+        <label for="bday">birthdate:</label>
+        <input type="date" id="bday" ><br>
+
+        <label for="quantity"></label>
+        <input type="number" id="quantity" min="0" max="99" va;ue="1"><br>
+
+        <label for="title">title:</label>
+
+        <label for="Mr">Mr.</label>
+        <input type="radio" id="Mr." value="Mr.">
+        <label for="Ms.">Ms.</label>
+        <input type="radio" id="Ms." value="Ms.">
+        <label for="Phd.">Phd.</label>
+        <input type="radio" id="Phd." value="phd."><br>
+
+        <label for="payment">payment</label>
+        <select id="payment">
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+        </select><br>
+
+        <label for="subscribe">subscribe:</label>
+        <input type="checkbox" id="subscribe"><br>
+
+        <label for="comment">comment:</label>
+        <textarea id="comment" rows="3" cols="25"></textarea>
+
+        <label for="file">file:</label>
+        <input type="file" id="file" accepts="image/png ,image/jpeg"><br>
+        
+        <input type="rest"><br>
+        <input type="submit">
+
+    </form>
+
+
+<!-- HEADERS AND FOOTERS -->
+    <header style="background-color:mediumpurple">
+        <h1>Welcome To The Webpage!</h1>
+        <a href="Home"></a>
+        <a href="About Us"></a>
+        <a href="Products"></a>
+        <a href="Contact us"></a>
+    </header>
+
+    <main>
+        <h4>check out these</h4>
+        <img src="https://m.media-amazon.com/images/I/718vM+75UNL.jpg" alt="profile pic" height="200">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolore placeat assumenda recusandae adipisci odio nobis itaque facilis eum optio. Rerum repellendus velit vel optio minima, obcaecati repudiandae nam aperiam.</p>
+    </main>
+
+    <footer style="background-color:blueviolet">
+        <hr>
+        author:Bhumi <br>
+        &copy; copyright reserved <br>
+        <small><a href="mailto:bhumimittal0401@gmail.com">bhumi@fake.com</a></small>
+    </footer>
+
+</body>
+</html> 

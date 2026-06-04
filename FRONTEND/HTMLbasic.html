@@ -1,0 +1,241 @@
+HTML - HYPER TEXT MARKUP LANGUAGE - Structure and layout of webpage.
+CSS - Style(cascading style sheets) or design 
+JS(Java Script) - logic
+
+HTML is the code that is used to structure a web page and its content.
+The component used to design the structure of websites are called HTML TAGS.
+HTML tags is a container for some content or other tags.
+    <p> This is a paragraph </p>
+ opening tag                 closing tag 
+                element
+
+html tag is parent of head and body tag.
+most of html elements have opening and closing tags with content in between.
+some tags have no conten in between ,eg - <br>
+we can use inspect element / view page source to edit html .
+HTML is not case sensitive.
+
+
+BASIC HTML TAGS- 
+ 
+HTML Attributes : they are used to add more information to the tag.
+<html lang="en">
+
+
+Heading Tag : used to display headings in html 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heading 1</h1>           <!-- most important - bada text-->
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>           <!-- least imp - chota text -->
+</body>
+</html>
+
+
+PARAGRAPH Tag : used to add paragraphs in html.
+<p>type the paragraph</p>
+use of toggle word wrap 
+
+
+ANCHOR Tag : used to add links to ur page 
+<a href="https://www.google.com/">Google</a>
+<br>                                                                br - break tag for next line 
+<a href="https://code.visualstudio.com/download">VScode</a>
+
+
+IMAGE TAGS : used to add images to your page.
+<img src="image.png"alt="random things" height="100" width="80">                     <!--better to set height and width by css -->
+
+<img src="https://m.media-amazon.com/images/I/718vM+75UNL.jpg" alt="notebook" height="50">
+
+
+BOLD, ITALIC & UNDERLINE TAGS :
+used to highlight text in ur page.
+<b>bold</b>
+<br>
+<i>italic</i>
+<br>
+<u>underline</u>
+
+BIG & SMALL TAGS :
+<big>big</big>
+<small>small</small>
+
+
+Hr TAF :(HORIZONTAL)
+usewd to display a horizontal ruler, used to seperate content.
+<hr>
+
+SUBSCRIPT & SUPERSCRIPT TAG :
+used to display a horizontal ruler,used to seperate content.
+<sub>subscripy </sub>
+<sup>superscripy</sup>
+
+<p>H<sub>2</sub>O</p>   H20
+<p>3<sup>2</sup>= 9 </p>
+
+PRE TAG : 
+used to display text as it is (without ignoring spaces & next line)
+<pre>this 
+    is a sample 
+    text
+</pre>
+
+<pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate doloribus omnis explicabo recusandae dolores voluptatem amet eaque natus illum laborum fugiat, soluta ipsa rem iste deleniti necessitatibus neque laudantium itaque.</pre>
+
+
+
+
+LAYOUTS 
+
+PAGE LAYOUT TECHNIQUES:
+use semantic tags for layout 
+
+use the right TAGS
+<header>
+<main>
+<footer>
+
+INSIDE BODY , we will have header , main and footer.
+INSIDE MAIN TAG:
+SECTION TAG - for a section on your page 
+<section>    </section>
+ARTICLE TAG - for an article on your page  
+<article>    </article>
+ASIDE TAG - for content aside main content (ads)
+<aside>      </aside>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first page</title>
+</head>
+
+<body>
+    <header>
+        <h1>MY PORTFOLIO</h1>
+    </header>
+    <main>
+        <section>
+            Education :
+            X - aggarwal school 
+            XII - Tagore academy
+            Btech - IIITDMJ
+        </section>
+        <section>Experiences : a | b</section>
+        <article>my story :</article>
+        <aside>this is an add</aside>
+    </main>
+    <footer>
+        <h5>contact me at 9987578 </h5>
+    </footer>
+</body>
+</html>
+
+
+
+
+REVISITING ANCHOR TAG 
+<a href ="link" target="_main">google</a>   for opening on new tab 
+
+<a href="link"><img src="link"></a>        fo clickable pics 
+ 
+
+
+DIV TAG :
+div is a container used for other html elements.
+BLock Element (takes full width)
+
+
+SPAN TAG :
+span is also a container used for other html elements.
+incline Element (takes width as per size )
+
+
+
+LIST IN HTML 
+
+list are used to represent real life list data.
+unordered-<ul>
+           <li>apple</li>
+           <li>mango</li>
+        </ul>
+
+ordered - 
+<ol>
+  <li>apple</li>  
+  <li>mango</li>    
+</ol>
+
+
+TABLES IN HTML 
+
+tables are used to represent real life table data 
+<tr> used to display table row
+<td> used to display table data
+<th> used to display table header.
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Roll no</th>
+    </tr>
+    <tr>
+        <td>shraddha</td>
+        <td>1886</td>
+    </tr>
+</table>
+
+
+CAPTIONS IN HTML 
+<caption>student data</caption>
+
+Thead and Tbody in tables 
+<thead> to wrap table head 
+<tbody> to wrap table body
+
+COLSPAN 
+colspan used to make the heading At center.
+
+
+FORMS IN HTML 
+forms are used to collect data from the user
+eg- sign up/login /help request /   contact me.
+
+<form>
+    form content
+</form>
+
+ACTION IN FORM 
+action contribute is used to define what actions needs to be performed when a form is submitted.
+<form action="/action.php">
+    <input type="text"placeholder="username">             <!--input taking in html-->
+    <input type="password"placeholder="password">
+
+
+</form>
+
+LABEL - 
+<label for="id1">
+    <input type="radio" value="class X" name="class" id="101">class X         <!--RADIO BUTTONS-->
+    </label> 
+    <label for="102">                           
+    <input type="radio" value="class XII" name="class" id="102">class XII
+    </label>
+
+
+
+
+
