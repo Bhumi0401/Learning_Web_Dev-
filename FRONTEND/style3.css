@@ -1,0 +1,140 @@
+/* BACKGROUND IMAGE  */
+
+body{
+    background-image: url(Pokemon-Pikachu-PNG-Download-Image.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+    background-size: cover;
+}
+
+
+/* 
+COMBINATORS: explains the relationship between listed selectors.
+             | = descendant 
+             > = child
+             ~ = general sibling 
+             + = adjacent sibling  
+*/
+
+#container{
+    border : 2px solid;
+}
+#container1{
+    border : 2px solid green;
+}
+#container p{
+    background-color:orange;
+}
+#container1 > p{
+    background-color:rgb(59, 12, 92);
+}
+#container ~ p{
+    background-color:blue;
+}
+
+
+
+/* PSEUDO-CLASSES */
+a:link{
+    color:rgb(164, 164, 239);
+}
+a:hover{
+    color:rgb(248, 113, 136);
+    font-size:1.1em;
+}
+a:active{
+    color:green;
+    font-size:1.1em;
+}
+a:visited{
+    color:red;
+}
+
+
+li:hover{
+    background-color:green;
+}
+li:not(:hover){
+    background-color:grey;
+}
+li:nth-child(4n){
+    background-color: blueviolet;
+}
+
+
+#greeting p{ 
+    background-color: lightblue;
+    padding: 10px;
+    display:none;
+}
+#greeting:hover p{
+    display:block;
+}
+
+
+
+/* PSEUDO-ELEMENTS = keywords added after a selector that is used to style a specific parts of an elements 
+                                selector::pseudo-element */
+h1::first-letter{
+    font-size: 2em;
+    font-style:italic;
+}
+p::first-letter{
+    background-color:yellow;
+}
+p::selection{
+    color:green;
+    background-color:grey; 
+}
+#fruit li::before{
+    content: "check";
+}
+#appple::after{
+    content: "a";
+}
+#orange::after{
+    content: "o";
+}
+#banana::after{
+    content:"b";
+}
+#friut li::marker{
+    content:" tick";
+    color:green;
+    font-size:1.2em;
+}
+
+
+
+/* PAGINATION */
+
+.pagination{
+    text-align:"center";
+}
+.pagination{
+    color:black;
+    text-decoration:none;
+    padding:8px 15px ;
+    display: inline-block;
+}
+.pagination a.active{
+    background-color:green;
+    font-weight:bold;
+    border-radius:5px;
+}
+.pagination a:hover:not(.active){
+    background-color:grey;
+    border-radius:5px;
+}
+
+
+
+
+
+
+
+
+
+
+

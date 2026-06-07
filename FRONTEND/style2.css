@@ -1,0 +1,239 @@
+/* BORDERS */
+
+h1{
+    border-style:solid;
+    border-width:4px;
+    border-color:rgb(64, 205, 154);
+    border-radius:20px;
+}
+h2{
+    border: 3px dashed purple;
+    border-radius : 20px;
+}
+h3{
+    border: 2px groove pink;
+    border-radius:20px;
+}
+p{
+    border-bottom:3px solid red;
+    border-top: 3px solid yellow;
+    border-left:3px dotted brown;
+    border-right: 3px dotted green;
+    border-radius:20px;
+}
+
+
+
+
+/* SHADOWS */
+/* 
+in text-shadow , first no.is for horizontal offset , second no.is for vertical offset and the third no. is for blur. */
+
+h1{
+    text-shadow:2px 2px 4px red;                 
+}
+h2{
+    text-shadow:2px 2px 3px yellow,-2px -2px 3px red; 
+}
+h3{
+    text-shadow:2ppx 2px 3px pink;
+}
+#box1{
+    width: 100px;
+    height:100px;
+    background-color:beige;
+    box-shadow:3px 3px 5px ;
+}
+
+
+
+
+/* margins - space around an element */
+body{
+    margin:0px;
+}
+.box{
+    border: 5px solid;
+    font-size:5em;
+    width:250px;
+    height:250px;
+}
+#box2{
+    background-color:red;
+    margin-top:100px;
+    margin-left:20px;
+    margin-bottom:50px;
+}
+#box3{
+    background-color:yellow;
+    margin:auto;    
+}
+/* auto will keep the box at the mid. */
+
+
+
+/* FLOAT - Allows other element to flow around it. */
+
+body{
+    border:3px solid;
+    display: flow-root;
+}
+#img1{
+    float: left;
+    margin-right:10px;;
+}
+#img2{
+    float:right;
+    margin-left:10px;
+}
+
+
+
+/* OVERFLOW  - property that sets the desired behaviour when content does not fit in the parent element box (overflow) */
+/* overflow - visible , hidden , clip , scroll , auto */
+div8{
+   border:2px solid;
+   height:30px;
+   overflow: visible;          
+}
+
+/*      visible- if the text flows out of the box , it will be visible.
+        hidden - if text flows out , it will be hidden 
+        clip- similar to hidden , used alongside with overflow-clip-margin: 13px so that the content which overflows will be available till 13px.
+        scroll - the box will contain a scroll bar both horizontal and vertical.
+        auto - will show a scroll bar only if needed.
+*/
+
+
+
+
+/* DISPLAY = property specifies if/how
+            an element is displayed. */
+
+/* BLOCK-LEVEL = Start on a new-line take up the full width available (h1 , div , p , form , header , footer) */
+/* INLINE = do not start on a new line , width is limited to what is needed (span , a , img)  */
+
+#div4{
+    background-color:red;
+    width:100px;
+    height:100px;
+    display: inline ,inline-block,block;  
+    visibility:hidden;
+}
+span{
+    background-color:red;
+    display:block;
+}
+
+
+
+/* WIDTH AND HEIGHT */
+*{
+    box-sizing : border-box;
+}
+.container{
+    background-color:darkorchid;
+    height:100vh;
+}
+.boxi{
+    background-color: red;
+    border:2px solid;
+    padding:25px;
+    height:auto;
+    width:50%;
+    float:left;
+
+    text-align:center;
+    max-height:75%;
+}
+
+
+
+
+/* POSITIONS */
+
+/*
+RELATIVE = positional relative to where it normally 
+FIXED = positioned relative to the viewport 
+ABSOLUTE = positioned relative to nearest ancestor 
+STICKY = positioned based on scroll position.      
+STATIC = default position for an element.
+*/
+
+#box5{
+    width:200px;
+    height:200px;
+    background-color:rgb(253, 225, 225);
+    position:relative;
+    top:100px;
+    left:100px;
+}
+#box6{
+    width:200px;
+    height:200px;
+    background-color:rgb(0, 213, 255);
+    position: fixed;
+    right:0px;
+}
+#box7{
+    width:100px;
+    height:100px;
+    position : absolute;
+    background-color: green;
+    top:50px;
+    left:50px;
+}
+#box8{
+    width:200px;
+    height:200px;
+    background-color:rgb(194, 22, 185);
+    position:sticky;
+    top:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
