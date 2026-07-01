@@ -192,7 +192,198 @@ console.log(gamename.indexOf('e'))
 const newstring = gamename.substring(0,4)
 console.log(newstring)
 
-+
+const anotherstring = gamename.slice(0,4)
+console.log(anotherstring)
+
+const newstring1 = gamename.substring(4,0)
+console.log(newstring1)
+
+const anotherstring1 = gamename.slice(4,0)
+console.log(anotherstring1)   //slice will return empty string if start index is greater than end index.            
+
+const p = "   hello world   ";
+console.log(p)
+console.log(p.trim())   //This will remove the leading and trailing whitespace from the string.
+console.log(p.trimStart())   //This will remove the leading whitespace from the string.
+console.log(p.trimEnd())   //This will remove the trailing whitespace from the string.  
+
+const url = "https://www.google.com/search?q=javascript"  
+console.log(url.replace('?q=javascript', ''))           
+console.log(url.includes('google'))   //This will return true because the string "google" is present in the url.
+console.log(url.startsWith('https'))   //This will return true because the string "https" is present at the start of the url.
+console.log(url.endsWith('javascript'))   //This will return true because the string "javascript" is present at the end of the url.             
+
+
+const mystring = "hello world"
+console.log(mystring.split(' '))   //This will split the string into an array of substrings based on the space character. It will return ["hello", "world"].
+console.log(mystring.split(''))   //This will split the string into an array of individual characters. It will return ["h", "e", "l", "l", "o", " ", "w", "o", "r", "l", "d"].
+
+const mystring1 = "hello-world"
+console.log(mystring1.split('-'))   //This will split the string into an array of substrings based on the hyphen character. It will return ["hello", "world"].  
+
+
+
+//***********************************************NUMBERS AND MATHS ************************************************* */
+
+const integer = 100;
+const s1 = new Number(100);
+console.log(integer)
+console.log(s1)
+console.log(typeof integer)   //This will return "number" because integer is a primitive number.
+console.log(typeof s1)   //This will return "object" because s1 is a Number object.
+
+console.log(s1.toString().length)  
+console.log(s1.toFixed(2))
+
+const othernumber = 23.456
+console.log(othernumber.toPrecision(3))
+
+const hundreds = 1000000
+console.log(hundreds.toLocaleString('en-IN'))
+
+
+console.log(Math)
+console.log(Math.abs(-4))
+console.log(Math.round(2.45))
+console.log(Math.ceil(4.67))
+console.log(Math.floor(4.67))
+console.log(Math.min(2,4,6,3,144,3))
+console.log(Math.max(2,4,6,3,144,3))
+
+console.log(Math.random())
+console.log((Math.random()*10) + 1)
+
+const min = 10
+const max = 20
+console.log(Math.floor(Math.random() * (max - min + 1) ) + min)
+
+
+//******************************************DATA AND TIME ****************************************************** */
+
+let myDate = new Date()
+console.log(myDate.toString())
+console.log(myDate.toDateString())
+console.log(myDate.toLocaleString())
+
+console.log(typeof myDate)
+
+let myCreatedDate = new Date(2023,0,23)
+console.log(myCreatedDate.toDateString())
+
+let d = new Date(2023, 0,23 ,5, 3)
+console.log(d.toLocaleString())
+
+let e = new Date("01-04-2007")
+console.log(e.toLocaleString())
+
+
+
+let myTimeStamp = Date.now()
+console.log(myTimeStamp)
+console.log(e.getTime())
+
+console.log(myCreatedDate.getTime())
+console.log(Math.floor(Date.now()/1000))
+
+let my = new Date()
+console.log(my)
+console.log(my.getMonth() + 1)
+console.log(my.getDay())
+
+
+//***********************************************ARRAYS*************************************************************** */
+const myArr = [1,2,3,4,5]
+console.log(myArr[0])
+
+const myHeroes = ["shaktiman","naagraj"]
+const myArr2 = new Array(2,4,9,3,2,)
+
+//Array Methods 
+
+myArr.push(6)
+console.log(myArr)
+
+myArr.pop()
+console.log(myArr)
+
+myArr.unshift(0)
+console.log(myArr)
+
+myArr.shift()
+console.log(myArr)
+
+console.log(myArr.includes(9))
+console.log(myArr.indexOf(9))
+console.log(myArr.indexOf(3))
+
+
+const newArray = myArr.join()
+
+console.log(myArr)
+console.log(newArray)
+console.log(typeof myArr)
+console.log(typeof newArray)
+
+
+//SLICE ,SPLICE 
+
+console.log("A", myArr)
+
+const myn1 = myArr.slice(1,3)
+
+console.log(myn1)
+console.log("B",myArr)
+
+
+
+const marvel = ["ironman","thor","spiderman","hulk","captain america"]
+const dc = ["batman","superman","flash"]
+
+marvel.push(...dc)  //This will add the elements of the dc array to the end of the marvel array. The spread operator (...) is used to spread the elements of the dc array into individual arguments for the push method.
+console.log(marvel)
+
+
+const combined = marvel.concat(dc)   //This will create a new array that contains the elements of both the marvel and dc arrays. The concat method does not modify the original arrays, but instead returns a new array that combines the elements of both arrays.
+console.log(combined)
+
+
+const myArr3 = [1,2,3,[4,5,6],7,[8,9,[10,11]]]
+console.log(myArr3.flat())   //This will flatten the myArr3 array by one level, resulting in a new array that contains all the elements of the original array, but with any nested arrays flattened into the top-level array. The flat method does not modify the original array, but instead returns a new array that is a flattened version of the original array.
+console.log(myArr3.flat(2))   //This will flatten the myArr3 array by two levels, resulting in a new array that contains all the elements of the original array, but with any nested arrays flattened into the top-level array. The flat method does not modify the original array, but instead returns a new array that is a flattened version of the original array.
+console.log(myArr3.flat(Infinity))   //This will flatten the myArr3 array by all levels, resulting in a new array that contains all the elements of the original array, but with any nested arrays flattened into the top-level array. The flat method does not modify the original array, but instead returns a new array that is a flattened version of the original array.
+
+
+console.log(Array.isArray("hello"))   //This will return false because "hello" is a string, not an array. The Array.isArray method is used to check if a value is an array or not. It returns true if the value is an array, and false otherwise.   
+console.log(Array.from("hello"))   //This will create a new array from the string "hello", resulting in an array that contains each character of the string as a separate element. The Array.from method is used to create a new array from an iterable object, such as a string or an array-like object. In this case, the string "hello" is treated as an iterable object, and each character of the string is added to the new array as a separate element.  
+
+console.log(Array.from({name: "bhumi"}))   //this will create a new array from the object {name: "bhumi"}, resulting in an array that contains the keys of the object as separate elements. The Array.from method is used to create a new array from an iterable object, such as a string or an array-like object. In this case, the object {name: "bhumi"} is treated as an iterable object, and each key of the object is added to the new array as a separate element.  
+
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+console.log(Array.of(score1, score2, score3))   //This will create a new array that contains the values of score1, score2, and score3 as separate elements. The Array.of method is used to create a new array from a variable number of arguments, and it returns a new array that contains each argument as a separate element. In this case, the values of score1, score2, and score3 are passed as arguments to the Array.of method, resulting in a new array that contains those values as separate elements.   
+
+
+//***********************************************OBJECTS*************************************************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
